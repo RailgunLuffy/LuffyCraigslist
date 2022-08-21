@@ -40,7 +40,6 @@ def new_search(request):
         if post.find(class_='result-image').get('data-ids'):
             post_image_id = post.find(class_='result-image').get('data-ids').split(',')[0].split(':')[1]
             post_image_url = BASE_IMAAGE_URL.format(post_image_id)
-            print(post_image_url)
         else:
             post_image_url = 'https://cdn.vox-cdn.com/thumbor/kk92vqQUzmwBCP1kZjG9UR0m8Qc=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/23589997/Screen_Shot_2022_05_26_at_10.49.28_AM.png'
 
